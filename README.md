@@ -85,6 +85,7 @@ If you launch the helloworld.html file in the web browser, you will see an alert
 
 Variables are used to store reusable values. 
 In JavaScript, you can declare variables using three different keywords: var, let, and const.
+
 #### var: 
 This was traditionally used to declare variables.
 It is not commonly used in modern JavaScript.
@@ -106,12 +107,15 @@ Scope : Global, Local, Block
 
        const myVar = 10;
 
+#### Rules for declaring variables:
 When declaring variables, it's a good practice to use let or const over var to avoid unexpected behavior. 
+
 You can declare multiple variables in a single line using commas.
 
        let x = 5, y = 10, z = 15;
        
 Always choose meaningful variable names to make your code more readable and maintainable.
+
 Variable names are case-sensitive, and they can contain letters, digits, underscores, or dollar signs. They must start with a letter, underscore, or dollar sign (not a digit). 
 
 valid variable names:
