@@ -44,3 +44,40 @@ Some of the key features of JavaScript include :-
 - Server applications
 - Client side validations
 - Animate Elements
+
+# YOUR FIRST JAVASCRIPT PROGRAM
+
+Now we can see how to embed JavaScript code into an HTML page.
+
+To insert JavaScript into an HTML page, you use the <script> element. There are two ways to use the <script> element in an HTML page:
+
+- Embed JavaScript code directly into the HTML page.
+- Reference an external JavaScript code file.
+
+### Embed JavaScript code in an HTML page:
+
+Placing JavaScript code inside the <script> element directly is not recommended and should be used only for proof of concept or testing purposes.
+
+    <script>alert('Hello, World!')</script>
+
+In the <script> element, we use the alert() function to display the Hello, World! message.
+
+### Include an external JavaScript file:
+To include a JavaScript from an external file:
+
+First, create a file whose extension is .js e.g., app.js and place it in the js subfolder. Note that placing the JavaScript file in the js folder is not required however it is a good practice.
+
+Then, use the URL to the JavasScript source code file in the src attribute of the <script> element.
+The following shows the contents of the app.js file:
+
+index.js file:
+
+    alert('Hello, World!');
+
+And the following scrit tag content in helloworld.html file:
+
+    <script src="js/index.js"></script>
+
+
+If you launch the helloworld.html file in the web browser, you will see an alert that displays the Hello, World! message.
+
