@@ -81,7 +81,8 @@ And the following scrit tag content in helloworld.html file:
 
 If you launch the helloworld.html file in the web browser, you will see an alert that displays the Hello, World! message.
 
-VARIABLES DECLARATION IN JS
+# VARIABLES DECLARATION IN JS
+
 Variables are used to store reusable values. 
 In JavaScript, you can declare variables using three different keywords: var, let, and const.
 #### var: 
