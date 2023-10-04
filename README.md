@@ -188,4 +188,66 @@ And one non-primitive data type:
 #### typeof operator: 
 It allows us to see which type is stored in a variable.
 
+# OPERATORS
+
+JavaScript has a variety of operators that allow you to perform different operations on values. 
+
+Here are some of the most common types of operators in JavaScript:
+
+1. **Arithmetic Operators**: These operators perform basic mathematical operations.
+   - Addition: `+`
+   - Subtraction: `-`
+   - Multiplication: `*`
+   - Division: `/`
+   - Modulus (Remainder): `%`
+
+3. **Assignment Operators**: Used to assign values to variables.
+   - Assignment: `=`
+   - Addition Assignment: `+=`
+   - Subtraction Assignment: `-=`
+   - Multiplication Assignment: `*=`
+   - Division Assignment: `/=`
+
+4. **Comparison Operators**: Used to compare values and return a Boolean result.
+   - Equal to: `==`
+   - Not equal to: `!=`
+   - Strict equal to: `===`
+   - Strict not equal to: `!==`
+   - Greater than: `>`
+   - Less than: `<`
+   - Greater than or equal to: `>=`
+   - Less than or equal to: `<=`
+
+5. **Logical Operators**: Used to perform logical operations on Boolean values.
+   - Logical AND: `&&`
+   - Logical OR: `||`
+   - Logical NOT: `!`
+
+6. **Unary Operators**: Operate on a single operand.
+   - Increment: `++`
+   - Decrement: `--`
+   - Unary plus: `+`
+   - Unary minus: `-`
+   - Typeof: `typeof`
+   - Delete: `delete`
+
+7. **Ternary (Conditional) Operator**: A shorthand for an `if-else` statement.
+   - Example: `condition ? expression1 : expression2`
+
+8. **Bitwise Operators**: Perform bitwise operations on integers.
+   - Bitwise AND: `&`
+   - Bitwise OR: `|`
+   - Bitwise XOR: `^`
+   - Bitwise NOT: `~`
+   - Left shift: `<<`
+   - Right shift: `>>`
+   - Zero-fill right shift: `>>>`
+
+9. **Other Operators**:
+   - Comma Operator: `,` (Used to separate expressions, evaluating them from left to right and returning the rightmost value)
+   - Conditional (Ternary) Operator: `? :` (Used for conditional expressions)
+   - instanceof (Used to test if an object is an instance of a particular class)
+   - in (Used to check if an object has a certain property)
+
+These operators are essential for performing different operations and controlling the flow of your JavaScript code.
 
