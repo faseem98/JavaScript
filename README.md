@@ -81,6 +81,19 @@ And the following script tag content in helloworld.html file:
 
 If you launch the helloworld.html file in the web browser, you will see an alert that displays the Hello, World! message.
 
+# BROWSER SPECIFIC FUNCTIONS
+
+Let's see 3 browser-specific functions to interact with the users,
+
+1. alert
+- shows a message.
+2. prompt
+- shows a message asking the user to input text. It returns the text or, if Cancel button or Esc is clicked, null.
+3. confirm
+- shows a message and waits for the user to press “OK” or “Cancel”. It returns true for OK and false for Cancel/Esc.
+
+All these methods are modal - they pause script execution and don’t allow the visitor to interact with the rest of the page until the window has been dismissed.
+
 # VARIABLE DECLARATION
 
 Variables are used to store reusable values. 
@@ -174,3 +187,5 @@ And one non-primitive data type:
 
 #### typeof operator: 
 It allows us to see which type is stored in a variable.
+
+
