@@ -188,6 +188,55 @@ And one non-primitive data type:
 #### typeof operator: 
 It allows us to see which type is stored in a variable.
 
+# TEMPLATE LITERALS
+- JavaScript template literals allows you to work with a string template more easily.
+
+- Before ES6, you use single quotes (') or double quotes (") to wrap a string literal.
+ 
+- ES6 template literals provide the syntax that allows you to work with strings more safely and cleanly.
+ 
+- In ES6, you create a template literal by wrapping your text in backticks (`)
+ 
+#### Variable Substitutions
+
+- Template literals allow variables in strings.
+  
+- Automatic replacing of variables with real values is called string interpolation.
+
+  **Syntax**: ${variable_name}
+    
+See the following example:
+
+    let firstName = 'John',
+    lastName = 'Doe';
+
+    let greeting = `Hi ${firstName}, ${lastName}`;
+    console.log(greeting); // Hi John, Doe
+    
+#### Getting the length of the string
+- The length property returns the length of a string.
+
+        let str = "Good Morning!";
+        console.log(str.length);  // 13
+
+#### Accessing characters
+- To access the characters in a string, you use the array-like [] notation with the zero-based index. 
+
+        let str = "Hello";
+        console.log(str[0]); // "H"
+
+- To access the last character of the string, you use the length - 1 index.
+
+        let str = "Hello";
+        console.log(str[str.length -1]); // "o"
+
+#### Concatenating strings via + operator
+- To concatenate two or more strings, you use the + operator.
+
+        let name = 'John';
+        let str = 'Hello ' + name;
+        console.log(str); // "Hello John"
+
 # OPERATORS
 
 JavaScript has a variety of operators that allow you to perform different operations on values. 
