@@ -188,7 +188,10 @@ And one non-primitive data type:
 #### typeof operator: 
 It allows us to see which type is stored in a variable.
 
-# TEMPLATE LITERALS
+# STRINGS & TEMPLATE LITERALS
+
+- A string is a sequence of one or more characters that may consist of letters, numbers, or symbols.
+  
 - JavaScript template literals allows you to work with a string template more easily.
 
 - Before ES6, you use single quotes (') or double quotes (") to wrap a string literal.
@@ -300,3 +303,76 @@ Here are some of the most common types of operators in JavaScript:
 
 These operators are essential for performing different operations and controlling the flow of your JavaScript code.
 
+# CONDITIONAL BRANCHING
+
+- Sometimes, we need to perform different actions based on different conditions.
+
+- We can use the if...else statement, the conditional operator (?) and the switch statement for conditional branching.
+
+## The if...else statement :
+- The if...else statement executes a statement if a specified condition is truthy.
+- If the condition is falsy, another statement in the optional else clause will be executed.
+
+**Syntax**:
+
+    if (condition)
+    statement1
+
+    // With an else clause
+    if (condition)
+      statement1
+    else
+      statement2
+
+#### The Nested if...else statement :
+- Multiple if...else statements can be nested to create an else if clause. 
+
+**Syntax**:
+
+    if (condition1)
+      statement1
+    else if (condition2)
+      statement2
+    else if (condition3)
+      statement3
+    // …
+    else
+      statementN
+
+## Conditional (ternary) operator : 
+- The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy.
+- This operator is frequently used as an alternative to an if...else statement.
+
+**Syntax**:
+
+     condition ? exprIfTrue : exprIfFalse
+
+#### Conditional chains :
+The ternary operator is right-associative which means it can be "chained" similar to an if … else if … else if … else chain.
+
+**Syntax**:
+
+    function example() {
+      return condition1 ? value1
+        : condition2 ? value2
+        : condition3 ? value3
+        : value4;
+    }
+
+## The switch statement : 
+- The switch statement evaluates an expression matching the expression's value against a series of case clauses and executes statements after the first case clause with a matching value until a break statement is encountered.
+- The default clause of a switch statement will be jumped to if no case matches the expression's value.
+
+**Syntax**:
+
+    switch (expression) {
+      case value1:
+        statements
+      case value2:
+        statements
+      // …
+      case valueN:
+        statements
+      default:
+        statements
+    }
