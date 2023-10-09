@@ -376,3 +376,54 @@ The ternary operator is right-associative which means it can be "chained" simila
       default:
         statements
     }
+
+# LOOPS
+
+- Loops are used in JavaScript to perform repeated tasks based on a condition.
+- There are four types of loops in JavaScript.
+ 1. for loop
+ 2. while loop
+ 3. do-while loop
+ 4. for-in loop
+
+## for loop : 
+- The JavaScript for loop iterates the elements for the fixed number of times.
+- It should be used if number of iteration is known.
+
+**Syntax**:
+
+    for (initialization; condition; increment)  
+    {  
+        code to be executed  
+    }  
+
+## while loop : 
+- The JavaScript while loop iterates the elements for the infinite number of times.
+- It should be used if number of iteration is not known.
+
+**Syntax**:
+
+    while (condition)  
+    {  
+        code to be executed  
+    }  
+
+## do-while loop : 
+- The JavaScript do while loop iterates the elements for the infinite number of times like while loop.
+- The code is executed at least once whether condition is true or false.
+
+**Syntax**:
+
+    do{  
+        code to be executed  
+    }while (condition);  
+
+## for-in loop : 
+- The JavaScript for in loop is used to iterate the properties of an object.
+
+**Syntax**:
+
+    for (variable in object)
+    {  
+         code to be executed  
+    } 
