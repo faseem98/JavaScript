@@ -427,3 +427,63 @@ The ternary operator is right-associative which means it can be "chained" simila
     {  
          code to be executed  
     } 
+
+# ARRAYS
+
+- An array is a type of data structure where you can store an ordered list of elements.
+
+- Array elements are numbered, starting with zero.
+
+## Declaration of an Array : 
+There are basically two ways to declare an array.
+
+1. Creating an array using array literal:
+
+        let arrayName = [value1, value2, ...];
+
+2. Creating an array using the JavaScript new keyword:
+
+        let arrayName = new Array();
+
+## Accessing array elements :
+- We can get an element by its index in square brackets.
+
+        let fruits = ["Apple", "Orange", "Plum"];
+        alert( fruits[0] ); // Apple
+        alert( fruits[1] ); // Orange
+        alert( fruits[2] ); // Plum
+  
+- We can replace an element in an array.
+
+       fruits[2] = 'Pear'; // now ["Apple", "Orange", "Pear"]
+  
+- We can add a new element to the array.
+
+       fruits[3] = 'Lemon'; // now ["Apple", "Orange", "Pear", "Lemon"]
+  
+- The total count of the elements in the array is its length:
+
+       let fruits = ["Apple", "Orange", "Plum"];
+       alert( fruits.length ); // 3
+
+## JavaScript Array Methods :
+Let's see the list of important JavaScript array methods,
+
+- concat() : It returns a new array object that contains two or more merged arrays.
+- every() : It determines whether all the elements of an array are satisfying the provided function conditions.
+- filter() : It returns the new array containing the elements that pass the provided function conditions.
+- find() : It returns the value of the first element in the given array that satisfies the specified condition.
+- forEach(): It invokes the provided function once for each element of an array.
+- includes() : It checks whether the given array contains the specified element.
+- indexOf() : It searches the specified element in the given array and returns the index of the first match.
+- map() : It calls the specified function for every array element and returns the new array
+- pop() : It removes and returns the last element of an array.
+- push() : It adds one or more elements to the end of an array.
+- reverse() : It reverses the elements of given array.
+- reduce(function, initial) :It executes a provided function for each value from left to right and reduces the array to a single value.
+- some() : It determines if any element of the array passes the test of the implemented function.
+- shift() : It removes and returns the first element of an array.
+- slice() : It returns a new array containing the copy of the part of the given array.
+- sort() : It returns the element of the given array in a sorted order.
+- splice() : It add/remove elements to/from the given array.
+- unshift() : It adds one or more elements in the beginning of the given array.
