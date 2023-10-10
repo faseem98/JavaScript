@@ -487,3 +487,93 @@ Let's see the list of important JavaScript array methods,
 - sort() : It returns the element of the given array in a sorted order.
 - splice() : It add/remove elements to/from the given array.
 - unshift() : It adds one or more elements in the beginning of the given array.
+
+# FUNCTIONS
+
+- In JavaScript, a function is a reusable block of code that performs a specific task or set of tasks. 
+- Functions are fundamental building blocks in JavaScript.
+- They allow you to encapsulate logic, organize your code and make it more modular and maintainable.
+
+**Syntax**:
+
+    function functionName(parameters) {
+      // Code to be executed
+      return result; // Optional
+    }
+
+**function**: The keyword used to declare a function.
+
+**functionName**: The name of the function (can be any valid identifier).
+
+**parameters**: Optional input values that the function can accept.
+
+**{}**: A pair of curly braces that enclose the code block to be executed when the function is called.
+
+**return**: An optional keyword used to specify the value that the function should return. If omitted, the function returns undefined.
+
+- Here's an example of a simple function,
+  
+        function add(a, b) {
+          return a + b;
+        } 
+
+- You can call this function by providing arguments,
+
+        const result = add(3, 4); // result will be 7
+
+- Functions can also be assigned to variables, passed as arguments to other functions, and returned from other functions. 
+
+## Function Declaration ways :
+- In JavaScript, you can declare functions using several methods:-
+  
+1. Function Declaration:
+   
+        function myFunction() {
+          // Function code here
+        }
+
+2. Function Expression:
+        
+        const myFunction = function() {
+          // Function code here
+        };
+
+3. Arrow Function (ES6):
+
+        const myFunction = () => {
+          // Function code here
+        };
+
+4. Function Constructor (not recommended):
+
+        const myFunction = new Function('arg1', 'arg2', 'return arg1 + arg2;');
+
+- Function Declarations and Expressions are the most common and recommended ways to declare functions in JavaScript. 
+- Arrow functions are especially useful for concise, inline functions. 
+- Function Constructor should be avoided unless you have specific reasons to use it.
+
+# ARROW FUNCTIONS
+
+- Arrow functions were introduced in ES6.
+- Arrow functions allow us to write shorter function syntax.
+
+**Syntax**:
+    
+    const functionName = (arg1, arg2, ?..) => {  
+        //body of the function  
+    }  
+
+
+- There are three parts in an Arrow Function
+
+1. **Parameters**: Any function may optionally have the parameters.
+2. **Fat arrow notation**: It is the notation for the arrow (=>).
+3. **Statements**: It represents the instruction set of the function.
+
+
+
+
+
+
+
+
