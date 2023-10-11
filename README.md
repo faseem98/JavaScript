@@ -488,6 +488,57 @@ Let's see the list of important JavaScript array methods,
 - splice() : It add/remove elements to/from the given array.
 - unshift() : It adds one or more elements in the beginning of the given array.
 
+## Deep Dive into Map, filter and reduce array methods :
+- Map, filter and reduce are three of the most useful and powerful high-order array methods.
+
+**Map method**:
+- The map() method is used for creating a new array from an existing one, applying a function to each one of the elements of the first array.
+
+**Syntax**:
+
+    var new_array = arr.map(function callback(element, index, array) {
+        // Return value for new_array
+    }[, thisArg])
+
+**Example**:
+
+    const numbers = [1, 2, 3, 4];
+    const doubled = numbers.map(item => item * 2);
+    console.log(doubled); // [2, 4, 6, 8]
+
+**Filter method**:
+- The filter() method takes each element in an array and it applies a conditional statement against it.
+- If this conditional returns true, the element gets pushed to the output array.
+- If the condition returns false, the element does not get pushed to the output array.
+
+**Syntax**:
+
+    var new_array = arr.filter(function callback(element, index, array) {
+        // Return true or false
+    }[, thisArg])
+
+**Example**:
+
+    const numbers = [1, 2, 3, 4];
+    const evens = numbers.filter(item => item % 2 === 0);
+    console.log(evens); // [2, 4]
+
+**Reduce method**:
+- The reduce() method reduces an array of values down to just one value.
+- To get the output value, it runs a reducer function on each element of the array.
+
+**Syntax**:
+
+    arr.reduce(callback[, initialValue])
+
+**Example**:
+
+    const numbers = [1, 2, 3, 4];
+    const sum = numbers.reduce(function (result, item) {
+      return result + item;
+    }, 0);
+    console.log(sum); // 10
+
 # FUNCTIONS
 
 - In JavaScript, a function is a reusable block of code that performs a specific task or set of tasks. 
