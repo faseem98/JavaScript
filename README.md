@@ -555,6 +555,7 @@ Let's see the list of important JavaScript array methods,
 # ARROW FUNCTIONS
 
 - Arrow functions were introduced in ES6.
+  
 - Arrow functions allow us to write shorter function syntax.
 
 **Syntax**:
@@ -570,6 +571,31 @@ Let's see the list of important JavaScript array methods,
 2. **Fat arrow notation**: It is the notation for the arrow (=>).
 3. **Statements**: It represents the instruction set of the function.
 
+- Some arrow functions have parentheses around the parameters and others don't.
+  
+        //Example with parentheses
+        const addNums = (num1, num2) => num1 + num2;
+        
+        //Example without parentheses
+        const addTwo = num => num + 2;
+  
+- The number of parameters an arrow function has determines whether or not we need to include parentheses.
+
+- An arrow function with zero parameters requires parentheses.
+ 
+        const hello = () => "hello";
+        console.log(hello());
+        //Result: "hello"
+
+- An arrow function with one parameter does not require parentheses. In other words, parentheses are optional.
+
+        const addTwo = num => num + 2;
+
+- An arrow function with multiple parameters requires parentheses.
+
+        const addNums = (num1, num2) => num1 + num2;
+        console.log(addNums(1, 2));
+        //Result: 3
 
 
 
