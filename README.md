@@ -603,6 +603,60 @@ Let's see the list of important JavaScript array methods,
 - Arrow functions are especially useful for concise, inline functions. 
 - Function Constructor should be avoided unless you have specific reasons to use it.
 
+## Types of Functions :
+1. Named function
+2. Anonymous function
+3. Immediately invoked function expression
+
+#### **Named Function**:
+- Named function is the function that we define it in the code and then call it whenever we need it.
+
+**Example**:
+
+    function oddOrEven(number){
+     if(number%2 == 0) {
+      return "Even number"
+     } else {
+      return "Odd number"
+     }
+    }
+
+#### **Anonymous Function**:
+- The anonymous functions don’t have names.
+- They need to be tied to something: variable or an event to run.
+
+**Example**:
+
+    let oddOrEven = function(number){
+         if(number%2 == 0) {
+          return "Even number"
+         } else {
+          return "Odd number"
+         }
+    }
+
+#### **Immediately invoked function expression**:
+- Invoked function expression runs as soon as the browser encounters it.
+
+**Example**:
+
+    // Regular Function. 
+        function Greet() { 
+            console.log("Welcome to JavaScript!"); 
+        }; 
+    // Execution of Regular Function. 
+        Greet(); 
+  
+    // IIFE creation and execution. 
+    (function() { 
+        console.log("Welcome to JavaScript!");  
+    })(); 
+
+**Output**:
+
+    Welcome to JavaScript!
+    Welcome to JavaScript!
+
 # ARROW FUNCTIONS
 
 - Arrow functions were introduced in ES6.
@@ -615,8 +669,7 @@ Let's see the list of important JavaScript array methods,
         //body of the function  
     }  
 
-
-- There are three parts in an Arrow Function
+- There are three parts in an Arrow Function,
 
 1. **Parameters**: Any function may optionally have the parameters.
 2. **Fat arrow notation**: It is the notation for the arrow (=>).
