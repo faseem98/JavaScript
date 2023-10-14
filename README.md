@@ -816,7 +816,7 @@ Let's see the list of important JavaScript array methods,
         };
         
         console.log(person.fullName()); // Outputs: "John Doe"
-
+        
    In the example above, the fullName property of the person object is a method. When called using person.fullName(), it returns the full name of the person by concatenating the firstName and lastName properties.
 
 - Object methods are often used for a variety of purposes, including:
@@ -826,7 +826,7 @@ Let's see the list of important JavaScript array methods,
 3. Interacting with the object's state or data.
 4. Performing actions related to the object.
 
-   Here's another example that demonstrates a method used to modify an object's property:
+Here's another example that demonstrates a method used to modify an object's property:
 
         const counter = {
           count: 0,
@@ -844,7 +844,114 @@ Let's see the list of important JavaScript array methods,
         counter.reset(); // Reset the count property
         console.log(counter.count); // Outputs: 0
 
+# DESTRUCTURING 
 
+- Destructuring in JavaScript is a feature that allows you to extract values from objects and arrays into variables.
+  
+- Destructuring provides a concise and convenient way to assign values to variables, especially when working with complex data structures.
 
+## Why Destructuring : 
 
+- The two most used data structures in JavaScript are Object and Array.
 
+1. Objects - used to create a single entity that stores data items by key.
+2. Arrays - used to gather data items into an ordered list.
+   
+- Although, when we pass them to a function, it may need not be an object/array as a whole. It may need individual pieces. So, we go for Destructuring.
+
+## Types of Destructuring : 
+
+- The two most used data structures in JavaScript are Object and Array.
+
+1. Object Destructuring:
+   
+-  Object destructuring allows you to extract values from objects and assign them to variables with the same property names.
+
+**Example**:
+
+    const person = { firstName: 'John', lastName: 'Doe' };
+    
+    const { firstName, lastName } = person;
+    
+    console.log(firstName); // 'John'
+    console.log(lastName);  // 'Doe'
+
+2. Array Destructuring:
+   
+- Array destructuring allows you to extract values from arrays and assign them to variables by their position.
+
+**Example**:
+
+    const colors = ['red', 'green', 'blue'];
+    
+    const [firstColor, secondColor, thirdColor] = colors;
+    
+    console.log(firstColor);  // 'red'
+    console.log(secondColor); // 'green'
+    console.log(thirdColor);  // 'blue'
+
+## Destructuring Features:
+
+-  **Ignore elements using commas**:
+Unwanted elements of the array can also be thrown away via an extra comma.
+
+        // second element is not needed
+        let [firstName, , title] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+        
+        alert( title ); // Consul
+   
+-  **Default value**:
+In JavaScript, we can provide default values for variables when using destructuring. Default values are used when the destructured value is undefined or null. We can specify default values using the = operator.
+
+Here's how to use default values in destructuring for both objects and arrays:
+
+1. Object Destructuring with Default Values:
+
+        const person = { firstName: 'John' };
+        
+        // If 'lastName' is missing, it will default to 'Doe'
+        const { firstName, lastName = 'Doe' } = person;
+        
+        console.log(firstName); // 'John'
+        console.log(lastName);  // 'Doe'
+
+2. Array Destructuring with Default Values:
+
+        const colors = ['red', 'green'];
+        
+        // If the third color is missing, it will default to 'blue'
+        const [firstColor, secondColor, thirdColor = 'blue'] = colors;
+        
+        console.log(firstColor);  // 'red'
+        console.log(secondColor); // 'green'
+        console.log(thirdColor);  // 'blue'
+
+It's important to note that default values are only applied if the variable being destructured is undefined or null. If the variable exists but has a falsy value like 0, an empty string, or false, the default value will not be used. For example:
+
+    const person = { name: '', age: 0 };
+    
+    // Default values are not used because the properties exist, but have falsy values
+    const { name = 'John', age = 30 } = person;
+    
+    console.log(name); // '' (empty string, not the default)
+    console.log(age);  // 0 (not the default)
+    
+-  **Rest property**:
+We can end a destructuring pattern with a rest property ...rest. This pattern will store all remaining properties of the object or array into a new object or array.
+
+        const { a, ...others } = { a: 1, b: 2, c: 3 };
+        console.log(others); // { b: 2, c: 3 }
+        
+        const [first, ...others2] = [1, 2, 3];
+        console.log(others2); // [2, 3]
+
+-  **Swap variables trick**:
+We can swap the values of two variables using destructuring in JavaScript by leveraging the destructuring assignment feature.
+
+        let a = 5;
+        let b = 10;
+        
+        [a, b] = [b, a];
+        
+        console.log(a); // Now a is 10
+        console.log(b); // Now b is 5
