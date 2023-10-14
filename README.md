@@ -701,7 +701,148 @@ Let's see the list of important JavaScript array methods,
         console.log(addNums(1, 2));
         //Result: 3
 
+# OBJECTS
 
+- A JavaScript object is a collection of named values.
+
+- It is a common practice to declare objects with the const keyword.
+
+**Example**:
+
+    const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+## Creating Objects :
+
+- There are different ways to create new objects,
+  
+1. **using an Object literal** : The simplest way to create an object is by using object literals, which allow you to define key-value pairs within curly braces.
+
+        var person = {
+          firstName: "John",
+          lastName: "Doe",
+          age: 30,
+        };
+
+2. **using the JavaScript Keyword new** :  You can create a new JavaScript object using new Object(), and then add properties.
+
+        const person = new Object();
+        person.firstName = "John";
+        person.lastName = "Doe";
+        person.age = 50;
+   
+3. **using Constructor Function** : You can create objects by defining constructor functions and then using the new keyword to instantiate objects from them.
+
+        function Person(firstName, lastName, age) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+          this.age = age;
+        }
+        
+        var person = new Person("John", "Doe", 30);
+
+4. **using Object.create()** : You can create an object based on a prototype using the Object.create() method. This method creates a new object with the specified prototype object.
+
+        class Person {
+          constructor(firstName, lastName, age) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+          }
+        }
+        
+        var person = new Person("John", "Doe", 30);
+
+## Objects and properties :
+
+- A JavaScript object has properties associated with it.
+  
+- The properties of an object define the characteristics of the object.
+
+        const myCar = {
+          make: "Ford",
+          model: "Mustang",
+          year: 1969,
+        };
+        
+## Accessing properties :
+
+- We can access a property of an object by its property name.
+
+- Property accessors come in two syntaxes: dot notation and bracket notation.
+
+        // Dot notation
+        myCar.make = "Ford";
+        myCar.model = "Mustang";
+        myCar.year = 1969;
+        
+        // Bracket notation
+        myCar["make"] = "Ford";
+        myCar["model"] = "Mustang";
+        myCar["year"] = 1969;
+
+## Modifying properties :
+
+- We can change the values of object properties by assigning new values.
+
+        person.age = 31; // Modify the 'age' property
+        person['lastName'] = 'Smith'; // Modify the 'lastName' property
+
+## Adding properties :
+
+- We can add new properties to an object at any time.
+
+        person.city = 'New York'; // Add a new 'city' property
+
+## Deleting properties :
+
+- We can remove properties from an object using the delete keyword.
+
+        delete person.city; // Remove the 'city' property
+
+## Object Methods : 
+
+- Object Methods are functions that are defined as properties of an object.
+  
+- The functions can be called to perform specific actions or operations on the object or its data.
+
+**Example**:
+
+        const person = {
+          firstName: 'John',
+          lastName: 'Doe',
+          fullName: function() {
+            return this.firstName + ' ' + this.lastName;
+          }
+        };
+        
+        console.log(person.fullName()); // Outputs: "John Doe"
+
+   In the example above, the fullName property of the person object is a method. When called using person.fullName(), it returns the full name of the person by concatenating the firstName and lastName properties.
+
+- Object methods are often used for a variety of purposes, including:
+  
+1. Modifying object properties.
+2. Calculating and returning values based on object properties.
+3. Interacting with the object's state or data.
+4. Performing actions related to the object.
+
+   Here's another example that demonstrates a method used to modify an object's property:
+
+        const counter = {
+          count: 0,
+          increment: function() {
+            this.count++;
+          },
+          reset: function() {
+            this.count = 0;
+          }
+        };
+        
+        counter.increment(); // Increment the count property
+        console.log(counter.count); // Outputs: 1
+        
+        counter.reset(); // Reset the count property
+        console.log(counter.count); // Outputs: 0
 
 
 
